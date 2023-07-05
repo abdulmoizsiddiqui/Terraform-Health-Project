@@ -123,3 +123,5 @@ resource "aws_instance" "web-server-aws_instance" {
         Name = "web-server"
     }
 }
+
+#EC2keypair and Security Credentials Removed
