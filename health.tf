@@ -112,12 +112,12 @@ resource "aws_instance" "web-server-aws_instance" {
   }
 
   user_data = <<-EOF
-                 #!/bin/bash
-                 sudo apt update -y
-                 sudo apt install apache2 -y
-                 sudo systemctl start apache2
-                 sudo bash -c 'echo Your very first web server > /var/www/html/index.html'
-                 EOF
+                #!/bin/bash
+                sudo apt update -y
+                sudo apt install apache2 -y
+                sudo systemctl start apache2
+                sudo bash -c 'echo Your very first web server > /var/www/html/index.html'
+                EOF
 
     tags = {
         Name = "web-server"
@@ -125,3 +125,4 @@ resource "aws_instance" "web-server-aws_instance" {
 }
 
 #EC2keypair and Security Credentials Removed
+#Terraform Updated
