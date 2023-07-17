@@ -125,4 +125,3 @@ resource "aws_instance" "web-server-aws_instance" {
 }
 
 #EC2keypair and Security Credentials Removed
-#Terraform Updated
